@@ -7,3 +7,11 @@
 .about-section p {
   margin-bottom: 5rem;
 }
+
+.img-aboutme {
+    width: 100%;
+}
+
+.text-white mb-4 {
+    font-size: 30px;
+}

@@ -13,15 +13,15 @@ a:focus, a:hover {
 }
 
 .bg-black {
-  background-color: #161616 !important;
+  background-color: #161616;
 }
 
 .bg-primary {
-  background-color: #64a19d !important;
+  background-color: #64a19d;
 }
 
 .text-primary {
-  color: #64a19d !important;
+  color: #64a19d;
 }
 
 footer {

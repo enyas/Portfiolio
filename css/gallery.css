@@ -29,3 +29,16 @@
     width: 30%;
   }
 }
+
+.title-gallery {
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 30px;
+}
+
+.carousel-indicators li {
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+}
+
