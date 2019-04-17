@@ -1,7 +1,15 @@
+
 .about-section {
-  padding-top: 10rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#161616), color-stop(75%, rgba(22, 22, 22, 0.9)), to(rgba(22, 22, 22, 0.8)));
-  background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+    position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: linear-gradient(to top, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.3) 75%, #161616 100%), url("../img/aboutme-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }
 
 .about-section p {
@@ -9,9 +17,23 @@
 }
 
 .img-aboutme {
-    width: 100%;
+    width: 50%;
+    padding-bottom: 40px;
+    padding-top: 40px;
 }
 
-.text-white mb-4 {
+.title-about {
     font-size: 30px;
+    color: rgba(255, 255, 255, 0.6);
 }
+
+.about-section-2 {
+    background-color: #161616;
+    padding-bottom: 60px;
+}
+
+.text-about {
+    color: white;
+    font-size: 15px;
+}
+
