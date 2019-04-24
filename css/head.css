@@ -49,6 +49,7 @@
     transition: none;
     padding: 2rem 1.5rem;
     color: rgba(255, 255, 255, 0.5);
+      font-size: 15px;
   }
   #mainNav .nav-link:hover {
     color: rgba(255, 255, 255, 0.75);
@@ -57,26 +58,22 @@
     color: white;
   }
   #mainNav.navbar-shrink {
-    background-color: #fff;
+    background-color: transparent;
   }
   #mainNav.navbar-shrink .navbar-brand {
-    color: #161616;
+    color: rgba(255, 255, 255, 0.5);
   }
   #mainNav.navbar-shrink .nav-link {
-    color: #161616;
+    color: rgba(255, 255, 255, 0.5);
     padding: 1.5rem 1.5rem 1.25rem;
     border-bottom: 0.25rem solid transparent;
+      font-size: 15px;
   }
   #mainNav.navbar-shrink .nav-link:hover {
     color: grey;
   }
   #mainNav.navbar-shrink .nav-link:active {
     color: grey;
-  }
-  #mainNav.navbar-shrink .nav-link.active {
-    color: grey;
-    outline: none;
-    border-bottom: 0.25rem solid grey;
   }
 }
 
@@ -92,14 +89,16 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+    height: 100vh;
 }
 
 .masthead h1 {
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
-    color: rgba(255, 255, 255, 0.6);
-    font-family: 'HONGKONG';
+  color: rgba(255, 255, 255, 0.6);
+  font-family: 'Shadows Into Light', cursive;
+
 }
 
 @media (min-width: 768px) {
@@ -119,13 +118,16 @@
     line-height: 6.5rem;
     letter-spacing: 0.8rem;
   }
-
 }
 
-@font-face {
-  font-family: HONGKONG;
-  src: url('css/fonts/HONGKONG.ttf') format('truetype',
-      url("css/fonts/HONGKONG.otf") format("opentype")
-  font-weight: normal;
-  font-style: normal;
+.navbar > .container,
+.navbar > .container-fluid {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
