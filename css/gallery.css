@@ -36,7 +36,7 @@
     font-size: 50px;
     color: rgba(255, 255, 255, 0.6);
     font-family: 'Shadows Into Light', cursive;
-    margin-top: 100px;
+    margin-top: 180px;
 }
 
 .carousel-indicators {
@@ -88,11 +88,11 @@
 
 .gallery-section {
     background-color: #161616;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 .gallery-section-top {
-       position: relative;
+  position: relative;
   width: 100%;
   height: auto;
   min-height: 35rem;
@@ -107,22 +107,28 @@
 
 #myCarousel {
     width: 75%;
-    margin-left: 260px;
+    margin-left: 21.5%;
 }
 
 .yt-video {
-    margin-left: 275px;
-    padding-top: 50px;
+    margin-left: 30%;
+    padding-top: 20px;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 }
-
 .yt-container {
     position: relative;
-    width: 100%;
+    width: 73.5%;
     height: 0;
-    padding-bottom: 56.25%;
+    padding-bottom: 44.85%;
+}
+.title-video {
+    color: white;
+    margin-left: 22%;
+    padding-top: 100px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
 }
