@@ -56,6 +56,7 @@ kbd,
 samp {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 1em;
+    border-radius: 50%;
 }
 
 pre {
@@ -4056,15 +4057,6 @@ input[type="button"].btn-block {
   padding-bottom: 0.5rem;
 }
 
-.navbar-collapse {
-  -ms-flex-preferred-size: 100%;
-  flex-basis: 100%;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
@@ -4093,40 +4085,6 @@ input[type="button"].btn-block {
   .navbar-expand-sm > .container-fluid {
     padding-right: 0;
     padding-left: 0;
-  }
-}
-
-@media (min-width: 576px) {
-  .navbar-expand-sm {
-    -ms-flex-flow: row nowrap;
-    flex-flow: row nowrap;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-  }
-  .navbar-expand-sm .navbar-nav {
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-  .navbar-expand-sm .navbar-nav .dropdown-menu {
-    position: absolute;
-  }
-  .navbar-expand-sm .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
-  }
-  .navbar-expand-sm > .container,
-  .navbar-expand-sm > .container-fluid {
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-  }
-  .navbar-expand-sm .navbar-collapse {
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -ms-flex-preferred-size: auto;
-    flex-basis: auto;
-  }
-  .navbar-expand-sm .navbar-toggler {
-    display: none;
   }
 }
 
@@ -6205,49 +6163,7 @@ a.close.disabled {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
 }
 
-.carousel-indicators {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 15;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding-left: 0;
-  margin-right: 15%;
-  margin-left: 15%;
-  list-style: none;
-}
 
-.carousel-indicators li {
-  box-sizing: content-box;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  width: 30px;
-  height: 3px;
-  margin-right: 3px;
-  margin-left: 3px;
-  text-indent: -999px;
-  cursor: pointer;
-  background-color: #fff;
-  background-clip: padding-box;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  opacity: .5;
-  transition: opacity 0.6s ease;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .carousel-indicators li {
-    transition: none;
-  }
-}
-
-.carousel-indicators .active {
-  opacity: 1;
-}
 
 .carousel-caption {
   position: absolute;
@@ -7622,14 +7538,6 @@ button.bg-dark:focus {
 .position-sticky {
   position: -webkit-sticky !important;
   position: sticky !important;
-}
-
-.fixed-top {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
 }
 
 .fixed-bottom {

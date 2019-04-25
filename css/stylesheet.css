@@ -1,6 +1,9 @@
 body {
   font-family: sans-serif;
   letter-spacing: 0.0625em;
+  font-size: 14px;
+    line-height: 1.42857143;
+    color: transparent;
 }
 
 a {
