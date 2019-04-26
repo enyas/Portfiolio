@@ -1,6 +1,8 @@
 /* Navigationbar */
 #mainNav {
   min-height: 56px;
+  font-family: 'Fjalla One', sans-serif;
+
 }
 
 .fixed-top {
@@ -160,6 +162,7 @@
   letter-spacing: 0.8rem;
   color: rgba(255, 255, 255, 0.6);
   font-family: 'Shadows Into Light', cursive;
+    padding-top: 300px;
 
 }
 
@@ -180,4 +183,8 @@
     line-height: 6.5rem;
     letter-spacing: 0.8rem;
   }
+}
+
+.txt-type > .txt {
+  border-right: 0.2rem solid #777;
 }

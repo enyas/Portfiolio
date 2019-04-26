@@ -27,17 +27,20 @@
     font-size: 50px;
     color: rgba(255, 255, 255, 0.6);
     font-family: 'Shadows Into Light', cursive;
-    margin-top: 230px;
+    margin-top: 160px;
 }
 
 .about-section-2 {
-    background-color: #161616;
+    background-color: #161616; 
     padding-bottom: 90px;
 }
 
 .text-about {
     color: white;
     font-size: 15px;
+    font-family: 'Yantramanav', sans-serif, li;
+
+
 }
 
 .text-about-strong {
