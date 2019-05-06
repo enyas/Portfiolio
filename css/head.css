@@ -2,7 +2,6 @@
 #mainNav {
   min-height: 56px;
   font-family: 'Fjalla One', sans-serif;
-
 }
 
 .fixed-top {
@@ -17,27 +16,6 @@
   border: 1px solid grey;
 }
 
-#mainNav .navbar-toggler:focus {
-  outline: none;
-}
-
-#mainNav .navbar-brand {
-  color: #161616;
-  font-weight: 700;
-  padding: .9rem 0;
-}
-
-#mainNav .navbar-nav .nav-item:hover {
-  color: fade(white, 80%);
-  outline: none;
-  background-color: transparent;
-}
-
-#mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
-  outline: none;
-  background-color: transparent;
-}
-
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 0;
@@ -46,9 +24,83 @@
     background-color: transparent;
     -webkit-transition: background-color 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
-          margin-top: 320px;
+          margin-top: 280px;
   }
   #mainNav .navbar-brand {
+    padding: .5rem 0;
+    color: rgba(255, 255, 255, 1.0);
+  }
+  #mainNav .nav-link {
+    -webkit-transition: none;
+    transition: none;
+    padding: 2rem 1.5rem;
+    color: rgba(255, 255, 255, 0.85);
+      font-size: 15px;
+  }
+  #mainNav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  #mainNav .nav-link:active {
+    color: white;
+  }
+  #mainNav.navbar-shrink {
+    background-color: transparent;
+  }
+  #mainNav.navbar-shrink .nav-link {
+    color: rgba(255, 255, 255, 0.85);
+    padding: 1.5rem 1.5rem 1.25rem;
+    border-bottom: 0.25rem solid transparent;
+    font-size: 18px;
+  }
+  #mainNav.navbar-shrink .nav-link:hover {
+    color: grey;
+  }
+  #mainNav.navbar-shrink .nav-link:active {
+    color: grey;
+  }
+}
+
+/* Button */
+@media (min-width: 768px) {
+  .navbar-expand-sm {
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    background-color: transparent;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 280px;
+  }
+  .navbar-expand-sm .navbar-nav {
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .navbar-expand-sm .navbar-nav .dropdown-menu {
+    position: absolute;
+  }
+  .navbar-expand-sm .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  .navbar-expand-sm > .container,
+  .navbar-expand-sm > .container-fluid {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+  .navbar-expand-sm .navbar-collapse {
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+  }
+  .navbar-expand-sm .navbar-toggler {
+    display: none;
+  }
+      #mainNav .navbar-brand {
     padding: .5rem 0;
     color: rgba(255, 255, 255, 1.0);
   }
@@ -77,47 +129,30 @@
     border-bottom: 0.25rem solid transparent;
     font-size: 18px;
   }
-  #mainNav.navbar-shrink .nav-link:hover {
-    color: grey;
   }
-  #mainNav.navbar-shrink .nav-link:active {
-    color: grey;
-  }
-}
 
-@media (min-width: 576px) {
-  .navbar-expand-sm {
-    -ms-flex-flow: row nowrap;
-    flex-flow: row nowrap;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-  }
-  .navbar-expand-sm .navbar-nav {
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-  .navbar-expand-sm .navbar-nav .dropdown-menu {
-    position: absolute;
-  }
-  .navbar-expand-sm .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
-  }
+ @media (max-width: 775.98px) {
   .navbar-expand-sm > .container,
   .navbar-expand-sm > .container-fluid {
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-  }
-  .navbar-expand-sm .navbar-collapse {
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -ms-flex-preferred-size: auto;
-    flex-basis: auto;
-  }
-  .navbar-expand-sm .navbar-toggler {
-    display: none;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
+  #mainNav .navbar-brand {
+    padding: .5rem 0;
+    color: rgba(255, 255, 255, 1.0);
+  }
+  #mainNav .nav-link {
+    -webkit-transition: none;
+    transition: none;
+    padding: 0.7rem;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 12px;
+  }
+  #mainNav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
 
 .navbar > .container,
 .navbar > .container-fluid {
@@ -162,14 +197,22 @@
   letter-spacing: 0.8rem;
   color: rgba(255, 255, 255, 0.6);
   font-family: 'Shadows Into Light', cursive;
-    padding-top: 300px;
 
+}
+
+@media (min-width: 432px) {
+  .masthead h1 {
+       font-size: 4.5rem;
+    line-height: 4.5rem;
+  padding-top: 170px;
+  }
 }
 
 @media (min-width: 768px) {
   .masthead h1 {
-    font-size: 6.5rem;
-    line-height: 6.5rem;
+    font-size: 5.5rem;
+    line-height: 5.5rem;
+      padding-top: 150px;
   }
 }
 
@@ -182,6 +225,7 @@
     font-size: 6.5rem;
     line-height: 6.5rem;
     letter-spacing: 0.8rem;
+       padding-top: 300px;
   }
 }
 

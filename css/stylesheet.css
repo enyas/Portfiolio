@@ -6,10 +6,6 @@ body {
     color: transparent;
 }
 
-a {
-  color: #64a19d;
-}
-
 a:focus, a:hover {
   text-decoration: none;
   color: #3e003e;
@@ -33,7 +29,7 @@ footer {
 
 .text-footer {
     font-size: 15px;
-        font-family: 'Yantramanav', sans-serif;
+    font-family: 'Yantramanav', sans-serif;
 
 }
 
