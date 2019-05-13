@@ -30,7 +30,11 @@ footer {
 .text-footer {
     font-size: 15px;
     font-family: 'Yantramanav', sans-serif;
+}
 
+.footer-title {
+    font-family: 'Shadows Into Light', cursive;
+    padding-bottom: 20px;
 }
 
 .container {
