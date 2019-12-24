@@ -12,7 +12,11 @@
   <!-- Bootstrap styles -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<!-- SASS styles -->
+    <script src="sass/stylesheet.scss"></script>
 
   <!-- CSS -->
   <link href="/css/bootstrap.css" rel="stylesheet">
@@ -35,6 +39,7 @@
 </head>
 
 <body id="page-top">
+
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-sm navbar-light fixed-top" id="mainNav">
@@ -137,13 +142,16 @@ I'm very passionate in what I do and hope you love my photographs as much as I d
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="/img/house.jpg" alt="Lost house" style="width:100%;">
+        <img id="img" src="/img/house.jpg" alt="Lost house" style="width:100%;">
+          <div id="dialog" style="display: none;">
+  <img src="/img/house.jpg">
+</div>
             <div class="carousel-caption">
         <h3>Basel</h3>
       </div>
       </div>
-        <div class="item">
-        <img src="/img/trashcans.jpg" alt="Trashcan" style="width:100%;">
+        <div class="item" id="trashcans">
+        <img class="image" src="/img/trashcans.jpg" alt="Trashcan" style="width:100%;">
       </div>
       <div class="item">
         <img src="/img/primetower.jpg" alt="Primetower" style="width:100%;">
@@ -200,6 +208,13 @@ I'm very passionate in what I do and hope you love my photographs as much as I d
 <div class="yt-container">
     <iframe class="yt-video" src="https://www.youtube.com/embed/sJcSG2tKVNc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
+<div class="container">
+
+    <img src="img/architektur-neuchatel.jpg" class="image-enlarge" style="width: 500px"/>
+
+</div>
+
 </section>
 
   <!-- Contact Section -->
@@ -216,18 +231,97 @@ I'm very passionate in what I do and hope you love my photographs as much as I d
           <h1 class="contact-text">my website in</h1>
         <a href="https://github.com/enyas/Portfiolio" class="mx-2" alt="GitHub">
             <i class="fab fa-github"></i><p id="text">GitHub</p></a>
-          </div>
+        </div>
+
+         <!--Section: Contact Form -->
+      <div class="form" class="container">
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact me</h2>
+
+    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact me directly. I'm open for any feedback you wanna give me.</p>
+
+    <div class="row" class="container">
+
+        <!--Grid column-->
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form action="mailto:enscarpel@gmail.com" id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <label for="name" class="">Your name</label>
+                            <input type="text" id="name" name="name" class="form-control">
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <label for="email" class="">Your email</label>
+                            <input type="text" id="email" name="email" class="form-control">
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                              <label for="subject" class="">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <label for="message">Your message</label>
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div id="send" class="text-center text-md-left">
+                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+            </div>
+            <div class="status"></div>
+        </div>
+
+           </div>
         <h1 class="contact-more">and there's more to come...</h1>
       </div>
   </section>
 
+      <div id="dialog" hidden="hidden"></div>
   <!-- Footer -->
   <footer class="bg-black small text-center text-white-50">
-       <h1 class="footer-title">enya scarpel</h1>
     <div class="text-footer" class="container">
       Enya Scarpel ICT Portfolio
     </div>
+
+<a class="scrollup" href="" id="js-top">
+  <svg id="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
+</a>
+
   </footer>
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="/js/jquery.js"></script>
@@ -236,7 +330,21 @@ I'm very passionate in what I do and hope you love my photographs as much as I d
   <script src="/js/jquery.easing.js"></script>
   <!-- Custom scripts for this template -->
   <script src="js/grayscale.js"></script>
-  <script src="js/type-writer.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+
+<!-- Own js scripts -->
+<script src="js/type-writer.js"></script>
+ <script src="js/form.js"></script>
+  <script lang='javascript' type="text/javascript" src="/js/photogalery.js"></script>
+
+<!-- jquery templates -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+
+
 
 </body>
 

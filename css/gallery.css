@@ -37,6 +37,7 @@
     color: rgba(255, 255, 255, 0.6);
     font-family: 'Shadows Into Light', cursive;
     margin-top: 150px;
+    padding-right: 60px;
 }
 
 .carousel-indicators {
@@ -209,4 +210,10 @@
     padding-top: 120px;
     font-family: 'Shadows Into Light', cursive;
     font-size: 25px;
+}
+
+.image-enlarge {
+   padding-top: 50px;
+    margin-left: 300px;
+
 }

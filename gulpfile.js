@@ -1,5 +1,13 @@
 "use strict";
 
+$(function ()
+{
+    $('#item').on('click', function ()
+    {
+        $(this).width(1000);
+    });
+});
+
 // Load plugins
 const autoprefixer = require("gulp-autoprefixer");
 const browsersync = require("browser-sync").create();

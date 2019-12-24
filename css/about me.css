@@ -21,13 +21,15 @@
     width: 50%;
     padding-bottom: 40px;
     padding-top: 80px;
+    align-content: center;
 }
 
 .title-about {
     font-size: 50px;
     color: rgba(255, 255, 255, 0.6);
     font-family: 'Shadows Into Light', cursive;
-    margin-top: 160px;
+    margin-top: 140px;
+    padding-left: 200px;
 }
 
 .about-section-2 {
